@@ -6,6 +6,7 @@ import com.amarin.urlshortenerapi.repository.UrlRepository;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Service
@@ -33,6 +34,12 @@ public class UrlService {
         var id = conversion.decode(shortUrl);
         var entity = urlRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("There is no entity with " + shortUrl));
+
+        if (entity.getExpiresDate().after(new Date())){
+            urlRepository.delete(entity);
+            throw new EntityNotFoundException("Link expired!");
+        }
+
         return entity.getLongUrl();
     }
 }
