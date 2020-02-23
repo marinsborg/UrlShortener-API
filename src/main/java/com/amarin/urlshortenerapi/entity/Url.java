@@ -7,13 +7,19 @@ import java.util.Date;
 @Table(name = "url")
 public class Url {
 
-    private long id;
-    private String longUrl;
-    private Date createdDate;
-    private Date expiresDate;
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+    @Column(nullable = false)
+    private String longUrl;
+
+    @Column(nullable = false)
+    private Date createdDate;
+
+    private Date expiresDate;
+
+
     public long getId() {
         return id;
     }
@@ -22,7 +28,7 @@ public class Url {
         this.id = id;
     }
 
-    @Column(nullable = false)
+
     public String getLongUrl() {
         return longUrl;
     }
@@ -31,7 +37,6 @@ public class Url {
         this.longUrl = longUrl;
     }
 
-    @Column(nullable = false)
     public Date getCreatedDate() {
         return createdDate;
     }

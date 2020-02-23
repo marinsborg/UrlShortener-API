@@ -35,7 +35,7 @@ public class UrlService {
         var entity = urlRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("There is no entity with " + shortUrl));
 
-        if (entity.getExpiresDate().after(new Date())){
+        if (entity.getExpiresDate() != null && entity.getExpiresDate().before(new Date())){
             urlRepository.delete(entity);
             throw new EntityNotFoundException("Link expired!");
         }
