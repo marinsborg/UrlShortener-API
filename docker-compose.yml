@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  mysql-local:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=shortener
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+    ports:
+      - 3306:3306
+
+  myapp-main:
+    image: amarin/url-shortener
+    restart: on-failure
+    depends_on:
+      - mysql-local
+    ports:
+      - 8080:8080
+      
