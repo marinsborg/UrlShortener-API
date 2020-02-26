@@ -13,6 +13,9 @@ services:
       - 3306:3306
 
   myapp-main:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: amarin/url-shortener
     restart: on-failure
     depends_on:
