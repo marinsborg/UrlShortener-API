@@ -2,7 +2,9 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/45cfeb44822d09972ef7/maintainability)](https://codeclimate.com/github/AnteMarin/UrlShortener-API/maintainability)
 
-[Read implementation details here](https://dev.to/antemarin/yet-another-url-shortener-4fe3)
+[Read about basic implementation here](https://dzone.com/articles/url-shortener-detailed-explanation)
+
+[Read about more details here](https://dzone.com/articles/url-shortener-pt-2)
 
 This is an API for Url shortener service like tiny url. 
 
