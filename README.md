@@ -29,4 +29,3 @@ $ git clone https://github.com/AnteMarin/UrlShortener-API.git
     - Build Spring project 
     - Open localhost:8080/swagger-ui.html to see endpoints.
 
-### TODO: Add detailed description about url shortener in general and this implementation
