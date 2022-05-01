@@ -2,7 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/45cfeb44822d09972ef7/maintainability)](https://codeclimate.com/github/AnteMarin/UrlShortener-API/maintainability)
 
-[Read about complete implementation here](https://marinsborg.com/2021/08/13/url-shortener-tutorial.html)
+# [Read about complete implementation here](https://www.marinsborg.com/url-shortener-a-detailed-explanation/)
 
 This is an API for Url shortener service like tiny url. 
 
