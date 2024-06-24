@@ -2,12 +2,10 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/45cfeb44822d09972ef7/maintainability)](https://codeclimate.com/github/AnteMarin/UrlShortener-API/maintainability)
 
-# [Read about complete implementation here](https://www.marinsborg.com/url-shortener-a-detailed-explanation/)
+This is an API for URL shortener service like tiny url. 
 
-This is an API for Url shortener service like tiny url. 
-
-Url shortener is service that converts long urls into short aliases to save space when sharing urls in messages, twitter, presentations etc.
-When user opens short url, it will be automatically redirected to original (long) url.
+Url shortener is a service that converts long URLs into short aliases to save space when sharing URLs in messages, twitter, presentations, etc.
+When a user opens a short URL, it will be automatically redirected to the original (long) URL.
 
 # How to use 
 + With Docker and docker-compose: 
